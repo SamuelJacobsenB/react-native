@@ -1,6 +1,5 @@
 {
-  "name": "wallet-app",
-  "license": "0BSD",
+  "name": "curso-rn",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
