@@ -1,13 +1,21 @@
 import React from "react";
-import { StyleSheet, View, Text, Image } from "react-native";
+import { StyleSheet, View, Text, Image, Alert } from "react-native";
+import Button from "../components/Button";
 
 const Home = () => {
+  const onSave = () => {
+    Alert.alert("Hello", "Testing an alert");
+  };
+
   return (
     <View style={styles.container}>
       <Image
         src="https://th.bing.com/th/id/OIP.3iP4oOAiL4f9hQlE9lEvawHaE8?rs=1&pid=ImgDetMain"
         style={styles.image}
       />
+      <Button color="green" onPress={onSave}>
+        <Text style={styles.text}>Hello world</Text>
+      </Button>
       <Text style={styles.text}>Bem vindo à tela inicial</Text>
     </View>
   );
@@ -27,6 +35,7 @@ const styles = StyleSheet.create({
   text: {
     color: "white",
     fontSize: 24,
+    textAlign: "center",
   },
   image: {
     width: 300,
